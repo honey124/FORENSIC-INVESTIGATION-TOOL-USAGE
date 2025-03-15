@@ -1,0 +1,89 @@
+What is and How To Use Autopsy
+
+What is Autopsy?
+Autopsy is a robust, open-source digital forensics tool designed to assist forensic investigators in analysing digital evidence from various sources such as hard drives, disk images, memory dumps, and mobile devices. Its graphical interface simplifies the process of investigating files, recovering deleted data, searching logs, and conducting detailed forensic analysis.
+Built on The Sleuth Kit (TSK), a suite of command-line tools for forensic analysis, Autopsy enhances the experience with an intuitive GUI, making it accessible for a wide range of users. It is widely used by law enforcement, security experts, and forensic investigators to tackle cases of computer crime, data breaches, and cyber incidents.
+
+Autopsy offers a comprehensive suite of modules that enable digital forensic experts to analyze and collect evidence from multiple digital sources. By following straightforward steps, users can create new cases, add data sources, run analysis, and generate detailed reports. Whether investigating deleted files, system event timelines, or email artifacts, Autopsy streamlines the entire investigative process. For newcomers to digital forensics, Autopsy’s user-friendly interface makes it easy to get started, while still providing powerful features for advanced forensic analysis.
+
+Key Features of Autopsy:
+•	File System Analysis: Autopsy can analyze the contents of file systems (FAT, NTFS, HFS+, ext3/4, etc.), helping to recover deleted files and inspect files and directories.
+•	Keyword Search: Allows you to search for specific keywords, phrases, or file types within a disk image or file system.
+•	Timeline Analysis: Autopsy can create timelines from system logs, file creation, access times, and other event data to help reconstruct the events leading up to an incident.
+•	Data Carving: It allows recovery of fragmented or deleted files, such as images and documents, that have been partially overwritten or deleted.
+•	Hash Set Comparison: Autopsy can match file hashes (MD5, SHA1, etc.) against known hash sets (e.g., those from criminal databases or file integrity verification) to identify known files, malware, or child exploitation images.
+•	Report Generation: It generates detailed reports that summarize your findings during the investigation.
+
+How to Use Autopsy
+Autopsy is relatively easy to use, thanks to its GUI. Here's a step-by-step guide on how to use Autopsy:
+
+1. Install Autopsy
+You can download and install Autopsy from its official website: https://www.sleuthkit.org/autopsy/.
+Autopsy runs on Windows, Linux, and macOS.
+•	For Windows:
+•	Download the installer from the official website.
+•	Run the installer and follow the prompts to install Autopsy.
+•	For Linux:
+•	On Ubuntu, for example, you can use the following commands:
+bash
+Copy
+sudo apt-get install autopsy
+•	Alternatively, you can download the source code from the official site and compile it manually.
+
+2. Create a New Case
+Once installed, you can open Autopsy and create a new case to start your investigation.
+•	Launch Autopsy: Open the Autopsy application (it runs in a web browser-like interface).
+•	Create New Case: On the main screen, click on "Create New Case".
+•	Case Name: Enter a name for your case.
+•	Case Directory: Choose a directory where the case files will be stored.
+•	Investigator Name: Enter the investigator's name or your organization’s name for tracking purposes.
+
+3. Add Data Source
+After creating a new case, you need to add a data source. A data source can be a physical disk, a disk image, or other types of evidence, such as log files or memory dumps.
+•	Click "Add Data Source".
+•	Select the Type of Data Source: You can add a disk image (such as .E01, .AFF, or .RAW format), a local disk, or a folder of files. Choose "Disk Image" if you're working with a disk image file.
+•	Browse to the location of the disk image and select it.
+•	File System Type: Autopsy will typically auto-detect the file system (NTFS, FAT, ext3, etc.), but you can select the correct file system if needed.
+
+4. Run Analysis Modules
+Once you've added your data source, you can start running analysis modules. These modules help you examine the data for evidence.
+•	Ingest Modules: Autopsy provides a variety of ingest modules, which are pre-configured scripts designed to analyze data in specific ways, such as recovering deleted files, generating a timeline, or analyzing web artifacts.
+•	File Type Identification: This module helps you identify the types of files in the disk image (documents, images, executables, etc.).
+•	Keyword Search: This allows you to search for specific keywords, phrases, or patterns across the data.
+•	File Analysis: This helps you examine individual files in the disk image, inspecting metadata and contents.
+•	Timeline: This module helps to create a timeline of activity based on file system events (e.g., file creation, access, modification, and deletion).
+•	Hash Lookup: You can use this to compare files to known hash sets (e.g., for identifying known files, malware, or child sexual abuse material).
+
+To run an ingest module:
+•	After selecting your data source, Autopsy will offer you a list of available modules.
+•	Choose the modules you want to run, such as File Analysis, Keyword Search, and Timeline Analysis.
+•	Click "Start" to begin the analysis.
+
+5. Analyze Results
+Once the analysis is complete, you can explore the results:
+•	File Browser: In the "File Analysis" tab, you can browse through the files and folders from the disk image, viewing file properties, metadata, and content.
+•	Recovered Files: In the "Recovered Files" tab, you can view files that were deleted or damaged. Autopsy will show you these files along with their metadata.
+•	Timeline: The Timeline module will display a timeline of file system events. You can see when files were created, accessed, modified, or deleted.
+•	Keyword Search Results: If you ran a keyword search, you can view the results of that search here, showing all instances of the keywords in files and documents.
+•	Hash Lookup: If you used hash sets, you can check the list of files that match known hashes, including potential evidence files.
+
+6. Generate Reports
+Autopsy allows you to generate detailed forensic reports of your findings.
+•	Generate Report: Once your analysis is complete, you can generate a report by going to the "Reports" tab.
+•	You can choose from a standard report, an HTML report, or a custom report based on what you need.
+•	The report can include information about file analysis, keyword searches, timelines, and other investigation data.
+•	You can also export the evidence findings to CSV files or other formats for further use.
+
+7. Export Evidence and Findings
+You can export files, folders, or any specific evidence for use in court or further investigation.
+•	Export Files: If you want to export specific files from your investigation, you can right-click on them in the File Browser and choose "Export".
+•	Export Report: After generating a report, you can save it in various formats (such as PDF, HTML, or plain text).
+
+8. Handle Artifacts and Investigate Specific Areas
+•	Email Analysis: Autopsy can analyze email artifacts, including headers, content, and attachments.
+•	Web Artifacts: It can examine web browser history, cookies, and cache files to trace web activity.
+•	Social Media and Chat Logs: You can investigate social media artifacts and chat logs found in user profiles.
+
+
+Udemy: Become a Digital Forensics Investigator with Autopsy!
+https://www.udemy.com/course/become-a-digital-forensics-investigator-with-autopsy/?utm_source=adwords&utm_medium=udemyads&utm_campaign=Search_DSA_GammaCatchall_NonP_la.EN_cc.India&campaigntype=Search&portfolio=India&language=EN&product=Course&test=&audience=DSA&topic=&priority=Gamma&utm_content=deal4584&utm_term=_._ag_166578677881_._ad_700948726520_._kw__._de_c_._dm__._pl__._ti_dsa-1456167871416_._li_9061994_._pd__._&matchtype=&gad_source=1&gclid=EAIaIQobChMIzsi9tv-IjAMVix2DAx38DS_iEAAYASAAEgLj9PD_BwE&couponCode=IND21PM  
